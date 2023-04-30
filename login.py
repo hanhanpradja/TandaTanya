@@ -1,8 +1,9 @@
-
+# Declare Variable
 nama = input()
 alamat = input()
 acc = 0
 
+# Accessing File
 file = open('cek.txt', 'r+')
 for line in file:
     line_split = line.split()
@@ -14,6 +15,7 @@ for line in file:
     
 file.close()
 
+# Set Condition
 if acc == 1:
     print('akses diterima')
 else:
