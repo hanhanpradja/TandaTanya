@@ -1,8 +1,9 @@
-
+# Declare Variable
 nama = input()
 alamat = input()
 acc = 0
 
+# Accessing File
 file = open('cek.txt', 'r+')
 lines = file.readlines() 
 if  lines == []:
@@ -17,6 +18,7 @@ else:
             acc = 1
 file.close()
 
+# Checking
 file = open('cek.txt', 'a')
 if acc == 0:
     print('username already taken')
